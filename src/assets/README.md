@@ -1,0 +1,6 @@
+assets模块下面有css、js、font、data四个模块，
+css文件夹放一些公共的css和重置的css样式
+js文件夹放一些公共的js
+font文件夹放一些字体图标
+data文件夹放一些json数据
+

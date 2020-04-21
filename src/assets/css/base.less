@@ -1,0 +1,143 @@
+@import "head-footer";
+@import "nav";
+@charset "UTF-8";
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, select,blockquote, th, td {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family:"微软雅黑",Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",  Arial, sans-serif;
+  font-size: 14px;
+  color:#666666; }
+select {outline:none;}
+input[type="text"] {  -webkit-box-shadow: 0 0 0px 1000px white inset;}
+img {
+  vertical-align: middle;
+  border: none; }
+a {
+  cursor: pointer;
+  text-decoration: none; }
+input,
+img,button {
+  border: 0 none;
+  outline-style: none;
+  margin: 0;
+  padding: 0; }
+
+/* 清除浮动 */
+.clearfix {
+  *zoom:1;/*IE/7/6*/
+  &:after {
+    content:"\200B";
+    display:block;
+    height:0;
+    clear:both;
+  }
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.ib {
+  display: inline-block;
+}
+
+.tc{
+  text-align: center;
+}
+
+.tl {
+  text-align: left;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+.my-scroll-bar{
+  height:100vh;
+}
+.setTopLine(@c: #C7C7C7) {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 1px;
+  border-top: 1px solid @c;
+  color: @c;
+  //transform-origin: 0 0;
+  transform: scaleY(0.5);
+}
+
+.setBottomLine(@c: #C7C7C7) {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  border-bottom: 1px solid @c;
+  color: @c;
+  //transform-origin: 0 100%;
+  transform: scaleY(0.5);
+}
+
+.setLeftLine(@c: #C7C7C7) {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  bottom: 0;
+  border-left: 1px solid @c;
+  color: @c;
+  //transform-origin: 0 0;
+  transform: scaleX(0.5);
+}
+
+.setRightLine(@c: #C7C7C7) {
+  content: " ";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1px;
+  bottom: 0;
+  border-right: 1px solid @c;
+  color: @c;
+  //transform-origin: 100% 0;
+  transform: scaleX(0.5);
+}
+
+.ellipsis(@w: auto) {
+  width: @w;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+.text_wrap() {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+//页面基本色调，文字颜色
+@titlefont: #333333;
+@subtitlefont: #666666;
+@contentfont: #999999;
+
+@border-color : #C7C7C7;
+
+
