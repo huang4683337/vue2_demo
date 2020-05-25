@@ -6,7 +6,7 @@
 </template>
 
 <script>
-    import a from './../../assets/js/a.js'
+    import { data, setData } from './a.js'
     import childB from './b.vue';
     export default {
         name: "zujian",
@@ -19,10 +19,13 @@
             childB,
         },
         methods: {
-            
+
         },
-        created(){
-            console.log(a.c())
+        created() {
+            console.log(data);	// data
+
+            setData(18);
+            console.log(data);	// 18
         }
     }
 </script>
